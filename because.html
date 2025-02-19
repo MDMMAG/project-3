@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #4c99d4; /* Background color */
+        }
+
+        .container {
+            width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 20px;
+        }
+
+        .item {
+            display: inline-block;
+            vertical-align:auto;
+            margin-right: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+            min-width: 300px; /* Set min-width to avoid content collapsing */
+        }
+
+        .item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item">
+        <img src="IMG_6003.JPG" alt="Image 1">
+        <p>for whatever.</p>
+    </div>
+    <div class="item">
+        <h2></h2>
+        <img src="IMG_6020.JPG" alt="Image 2">
+        <p>we loos.</p>
+    </div>
+    <div class="item">
+        <h2></h2>
+        <img src="IMG_6027.JPG" alt="Image 3">
+        <p>like you and or me .</p>
+    </div>
+    <div class="item">
+        <h2></h2>
+        <img src="IMG_5944.JPG" alt="Image 4">
+        <p>its alaways ourselves .</p>
+    </div>
+    <div class="item">
+        <h2></h2>
+        <img src="IMG_5999.JPG" alt="Image 5">
+        <p>We find in the sea</p>
+    </div>
+    <div class="item">
+        <h2></h2>
+        <img src="IMG_6028.JPG" alt="Image 5">
+
+</div>
+
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        var container = document.querySelector('.container');
+
+        container.addEventListener('wheel', function(event) {
+            event.preventDefault();
+            var delta = Math.max(-1, Math.min(1, (event.wheelDelta || -event.detail)));
+            container.scrollLeft -= (delta * 40); // Adjust scrolling speed here
+        });
+    });
+</script>
+
+</body>
+</html>
