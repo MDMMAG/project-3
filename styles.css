@@ -1,0 +1,82 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "MS Sans Serif", Arial, sans-serif;
+    background-image: url('wallpaper.png');
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center center; /* Centers the background image */
+    background-attachment: fixed;
+    color: #000;
+    text-align: center;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+header {
+    background-color: #C0C0C0;
+    padding: 20px;
+    border: 2px solid #000080;
+}
+
+header h1 {
+    font-family: "Arial Black", sans-serif;
+    font-size: 2.5rem;
+    color: #000080;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #000080;
+}
+
+.desktop {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Prevent the page from scrolling */
+}
+
+.icon {
+    position: absolute; /* Allow positioning each icon independently */
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none; /* Remove link underline */
+}
+
+.icon img {
+    width: 85x;
+    height: 72px;
+    margin-bottom: 10px;
+}
+
+.icon p {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.icon:hover {
+    background-color: #000080;
+    color: white;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #C0C0C0;
+    padding: 15px;
+    border-top: 2px solid #000080;
+    margin-top: 50px;
+}
+
+footer p {
+    color: #000080;
+    font-size: 0.9rem;
+}
