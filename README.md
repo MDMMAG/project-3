@@ -1,5 +1,5 @@
 # 
-Mot de merde magazine.
+Mot de merde , A BS fashion magazine.
 
 
 
