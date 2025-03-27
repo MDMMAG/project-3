@@ -22,7 +22,7 @@
         .item {
             display: inline-block;
             vertical-align:auto;
-            margin-right: 20px;
+            margin-right: 15px;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
@@ -30,7 +30,7 @@
         }
 
         .item img {
-            max-width: 100%;
+            max-width: 70%;
             height: auto;
             display: block;
             margin: 0 auto;
@@ -75,11 +75,18 @@
 <script>
     window.addEventListener('DOMContentLoaded', function() {
         var container = document.querySelector('.container');
+        var items = container.children; // Get all the child elements inside the container
+        var itemWidth = items[0].offsetWidth; // Assuming all items have the same width
 
-        container.addEventListener('wheel', function(event) {
-            event.preventDefault();
-            var delta = Math.max(-1, Math.min(1, (event.wheelDelta || -event.detail)));
-            container.scrollLeft -= (delta * 40); // Adjust scrolling speed here
+        // Listen for keydown event for left and right arrow keys
+        window.addEventListener('keydown', function(event) {
+            if (event.key === "ArrowRight") {
+                // Move to the next item
+                container.scrollLeft += itemWidth;  // Scroll to the next image/item
+            } else if (event.key === "ArrowLeft") {
+                // Move to the previous item
+                container.scrollLeft -= itemWidth;  // Scroll to the previous image/item
+            }
         });
     });
 </script>
