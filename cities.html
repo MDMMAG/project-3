@@ -6,35 +6,91 @@
     <title>MDM ISSUES</title>
     <link rel="icon" type="image/png" href="sad.png" sizes="32x32">
     <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        /* Container for icons */
+        .desktop {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /* Icons */
+        .icon {
+            position: absolute;
+            text-align: center;
+            color: white;
+            font-size: 1.5vw; /* Scales text with screen width */
+            text-decoration: none;
+        }
+
+        .icon img {
+            width: 10vw; /* Adjusts size based on screen */
+            height: auto;
+            max-width: 100%;
+        }
+
+        /* Footer */
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 1vw;
+        }
+
+        /* 🔹 Responsive Scaling */
+        @media (max-width: 768px) {
+            .icon {
+                font-size: 4vw; /* Increase text size on mobile */
+            }
+
+            .icon img {
+                width: 18vw; /* Icons stay visible */
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="desktop">
         <!-- Icon for Issue 1 -->
-        <a href="issues.html" class="icon" style="top: 100px; left: 50px;">
+        <a href="issues.html" class="icon" style="top: 10vh; left: 5vw;">
             <img src="issue1.png" alt="Icon 1">
             <p>Issue 1</p>
         </a>
 
         <!-- Icon for Issue 2 -->
-        <a href="Issue2.html" class="icon" style="top: 200px; left: 300px;">
+        <a href="Issue2.html" class="icon" style="top: 20vh; left: 30vw;">
             <img src="2.png" alt="Icon 2">
             <p>Issue 2</p>
         </a>
 
         <!-- Icon for Issue 3 -->
-        <a href="tuned.html" class="icon" style="top: 150px; left: 600px;">
+        <a href="tuned.html" class="icon" style="top: 15vh; left: 60vw;">
             <img src="issue3.png" alt="Icon 3">
             <p>Issue 3</p>
         </a>
 
         <!-- Icon for Issue 4 -->
-        <a href="tuned.html" class="icon" style="top: 350px; left: 500px;">
+        <a href="tuned.html" class="icon" style="top: 35vh; left: 50vw;">
             <img src="ISSUE4.png" alt="Icon 4">
             <p>Issue 4</p>
         </a>
 
         <!-- Icon for Issue 5 -->
-        <a href="tuned.html" class="icon" style="top: 50px; left: 750px;">
+        <a href="tuned.html" class="icon" style="top: 5vh; left: 75vw;">
             <img src="https://via.placeholder.com/64" >
             <p>Issue 5</p>
         </a>
